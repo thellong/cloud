@@ -1,0 +1,27 @@
+Chạy để cài:npm install
+chạy để load web:npm start
+link:http://localhost:3000/sample_data/
+--
+-- Database: `testing`
+--
+
+-- --------------------------------------------------------
+
+#postgres
+CREATE TABLE sample_data (
+  id SERIAL PRIMARY KEY,
+  first_name varchar(250),
+  last_name varchar(250),
+  age varchar(30),
+  gender varchar(30)
+);
+--
+-- Dumping data for table `sample_data`
+--
+
+#postgres
+INSERT INTO sample_data (id, first_name, last_name, age, gender) VALUES
+(1, 'John', 'Smith', '26', 'Male'),
+(2, 'Donna', 'Hubber', '24', 'Female'),
+(3, 'Peter', 'Parker', '28', 'Male'),
+(4, 'Tom ', 'Muddy', '28', 'Male');
